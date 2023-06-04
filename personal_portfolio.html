@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      padding-top: 4vh;
+    }
+
+    nav {
+      position: relative;
+      width: 90vw;
+      margin: 0 auto;
+      background: #000000;
+      z-index: 1;
+      text-align: right;
+      padding-right: 2%;
+    }
+
+    .logo {
+      width: 15%;
+      float: left;
+      color: #fff;
+      text-align: left;
+      padding: 10px 25px;
+    }
+
+    .LOGO {
+      width: 7vw;
+      height: 6vw;
+    }
+
+    .menu-area li {
+      display: inline-block;
+      list-style-type: none;
+    }
+
+    .menu-area a {
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: block;
+      padding: 1vw 1.5vw;
+      margin-top: 1.8vw;
+      font-size: 1.5vw;
+      line-height: 20px;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+    }
+
+    .menu-area a:hover {
+      background: rgba(168, 193, 203, 0.577);
+    }
+
+    nav:before {
+      position: absolute;
+      content: '';
+      border-top: 10px solid #333;
+      border-right: 10px solid #333;
+      border-left: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      top: 100%;
+      left: 0;
+    }
+
+    nav:after {
+      position: absolute;
+      content: '';
+      border-top: 10px solid #333;
+      border-left: 10px solid #333;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      top: 100%;
+      right: 0;
+    }
+
+
+    .main {
+      animation: changeBg 10s infinite;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @keyframes changeBg {
+
+      0%,
+      100% {
+        background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+      }
+
+      20% {
+        background-image: url("https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?b=1&s=612x612&w=0&k=20&c=B1O_UHuhlV34GJnQxQgxGDqmtBKMJkMf_FGssI1WEVE=");
+      }
+
+      40% {
+        background-image: url("https://wallpaperaccess.com/full/5651988.jpg");
+      }
+
+      60% {
+        background-image: url("https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg");
+      }
+
+      80% {
+        background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?cs=srgb&dl=pexels-hasan-albari-1229861.jpg&fm=jpg");
+
+
+      }
+    }
+
+    /* background-image: url("https://t4.ftcdn.net/jpg/02/18/89/83/360_F_218898398_wnLuoR9GY4qhLB2tc7o3tSJbQCRfq0xc.jpg"); */
+    /* background-image: url("");  */
+
+
+
+    header {
+      display: grid;
+      float: right;
+      margin: 10%;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer {
+      color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    b {
+      text-shadow: 2px 2px rgb(239, 230, 230);
+      color: #f6e7e79d;
+
+    }
+
+    .about {
+      background-color: rgba(119, 113, 241, 0.145);
+      margin: 10%;
+      padding: 5%;
+      border-radius: 6px;
+    }
+
+    .about:hover {
+      background-color: rgba(143, 94, 29, 0.303);
+      border: 3px solid rgb(216, 198, 198);
+      box-shadow: 0px 1px 10px 1px white;
+    }
+
+    .skills {
+      background-color: rgba(119, 113, 241, 0.126);
+      margin: 10%;
+      padding: 5%;
+      border-radius: 6px;
+
+    }
+
+    .skills:hover {
+      background-color: rgba(143, 94, 29, 0.303);
+      box-shadow: 0px 1px 10px 1px white;
+      border: 3px solid rgb(216, 198, 198);
+    }
+
+    .contact {
+      background-color: rgba(119, 113, 241, 0.126);
+      border-radius: 6px;
+      margin: 10%;
+      padding: 5%;
+
+    }
+
+    .contact:hover {
+      background-color: rgba(143, 94, 29, 0.303);
+      border: 3px solid rgb(216, 198, 198);
+      box-shadow: 0px 1px 10px 1px white;
+    }
+
+    .lang {
+      width: 13vw;
+      height: 13vw;
+      margin: 3vw 3vw;
+    }
+
+    .media {
+      width: 4vw;
+      height: 4vw;
+      margin-left: 3vw;
+      /* margin-right: 3vw; */
+    }
+
+    .media:hover {
+      width: 5vw;
+      height: 5vw;
+      filter: drop-shadow(-3px 4px 4px #f6e7e79d);
+    }
+
+    .links {
+      /* margin: 5px 5px 5px 5px ; */
+      display: flex;
+      margin: 25px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <img class="LOGO"
+            src="https://static.vecteezy.com/system/resources/thumbnails/004/235/481/small/kg-logo-monogram-emblem-style-with-crown-shape-design-template-free-vector.jpg"
+            alt="">
+        </div>
+        <ul class="menu-area">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <!-- <li><a href="#">Portfolio</a></li> -->
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header>
+      <!-- <marquee scrollamount="13" direction="left"> -->
+      <h1>HOLA👋,AMIGOS. I AM <b>KISHAN GUPTA.</b></h1>
+      <hr>
+      <h3>WELCOME TO MY PORTFOLIO WEBSITE ! </h3>
+
+      <!-- </marquee> -->
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+      <section class="about">
+        <h2 style="color:rgb(251, 187, 27);">Basic information about me</h2>
+        <hr>
+        <h5>EDUCATION</h5>
+        <h7> I am a first-year student at Indian Institute of Technology(Banaras Hindu University)
+          pursuing Mathematics and Computing.</h7>
+        <br><br>
+        <h5>INTEREST</h5>
+        <h7>I am interested in programming and designing attractive web pages.</h7>
+        <br><br>
+        <h5>HOBBIES</h5>
+        <h7>I like to play chess in my free time.</h7>
+      </section>
+      <section class="skills">
+        <h1 style="color:rgb(251, 187, 27);">MY SKILLS</h1>
+        <hr>
+        <ul>
+          <h2>Coding Languages</h2>
+          <div class="languages">
+            <img class="lang" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="">
+
+            <img class="lang" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="">
+            <img class="lang"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"
+              alt="">
+            <img class="lang" src="https://prepinsta.com/wp-content/uploads/2020/07/python-removebg-preview.webp"
+              alt="">
+            <img class="lang" src="https://www.kloia.com/hubfs/java-1.png" alt="">
+          </div>
+        </ul>
+        <ul>
+          <h5>
+            <li>DATA STRUCTURE</li>
+          </h5>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h1 style="color: rgb(251, 187, 27);">GET IN TOUCH</h1>
+        <hr>
+        <div class="links">
+          <a target="_blank" href="https://github.com/kishanG108">
+            <img class="media"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png">
+          </a>
+          <a target="_blank" href="https://wa.me/qr/HTMIBJZHNM3UP1">
+            <img class="media"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png">
+          </a>
+          <a target="_blank" href="https://instagram.com/6926_kishan?igshid=ZDc4ODBmNjlmNQ==">
+            <img class="media"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+          </a>
+          <a target="_blank" href="#">
+            <img class="media"
+              src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png">
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/kishan-gupta-1a187624a">
+            <img class="media" src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png">
+          </a>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p style="color: rgb(73, 101, 101);">Copyright &copy; 2023 KISHAN GUPTA </p>
+    </footer>
+  </div>
+</body>
+
+</html>
